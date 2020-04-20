@@ -11,6 +11,7 @@ export class BlogItemDetailsComponent implements OnInit {
 
   public image = "";
   public text = "";
+  public title = "";
   public id: number;
 
   constructor(private dataService: DataService, private route: ActivatedRoute) {
@@ -26,6 +27,7 @@ export class BlogItemDetailsComponent implements OnInit {
     this.dataService.getById(id).subscribe(res => {
       this.image = res['image'];
       this.text = res['text'];
+      this.title = res['title'];
     });
   }
 
