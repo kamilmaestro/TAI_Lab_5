@@ -24,7 +24,7 @@ const routes: Routes = [
     component: BlogItemDetailsComponent
   },
   {
-    path: 'blog/add-post',
+    path: 'add-post',
     component: AddPostComponent
   }
 ];

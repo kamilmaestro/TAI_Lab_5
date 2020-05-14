@@ -90,6 +90,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_blog_home_blog_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./components/blog-home/blog-home.component */
     "./src/app/components/blog-home/blog-home.component.ts");
+    /* harmony import */
+
+
+    var _components_add_post_add_post_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./components/add-post/add-post.component */
+    "./src/app/components/add-post/add-post.component.ts");
 
     var routes = [{
       path: 'blog',
@@ -103,6 +109,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       path: 'blog/detail/:id',
       component: _components_blog_item_details_blog_item_details_component__WEBPACK_IMPORTED_MODULE_4__["BlogItemDetailsComponent"]
+    }, {
+      path: 'add-post',
+      component: _components_add_post_add_post_component__WEBPACK_IMPORTED_MODULE_6__["AddPostComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -365,6 +374,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_selectize_selectize_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./components/selectize/selectize.component */
     "./src/app/components/selectize/selectize.component.ts");
+    /* harmony import */
+
+
+    var _components_add_post_add_post_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    /*! ./components/add-post/add-post.component */
+    "./src/app/components/add-post/add-post.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -384,7 +399,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], _components_blog_blog_component__WEBPACK_IMPORTED_MODULE_6__["BlogComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponent"], _components_blog_item_blog_item_component__WEBPACK_IMPORTED_MODULE_8__["BlogItemComponent"], _components_blog_item_text_blog_item_text_component__WEBPACK_IMPORTED_MODULE_9__["BlogItemTextComponent"], _components_blog_item_image_blog_item_image_component__WEBPACK_IMPORTED_MODULE_10__["BlogItemImageComponent"], _components_blog_item_details_blog_item_details_component__WEBPACK_IMPORTED_MODULE_11__["BlogItemDetailsComponent"], _pipes_summary_pipe__WEBPACK_IMPORTED_MODULE_14__["SummaryPipe"], _shared_search_bar_search_bar_component__WEBPACK_IMPORTED_MODULE_15__["SearchBarComponent"], _components_blog_home_blog_home_component__WEBPACK_IMPORTED_MODULE_17__["BlogHomeComponent"], _pipes_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["FilterPipe"], _directives_text_format_directive__WEBPACK_IMPORTED_MODULE_19__["TextFormatDirective"], _components_selectize_selectize_component__WEBPACK_IMPORTED_MODULE_20__["SelectizeComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], _components_blog_blog_component__WEBPACK_IMPORTED_MODULE_6__["BlogComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponent"], _components_blog_item_blog_item_component__WEBPACK_IMPORTED_MODULE_8__["BlogItemComponent"], _components_blog_item_text_blog_item_text_component__WEBPACK_IMPORTED_MODULE_9__["BlogItemTextComponent"], _components_blog_item_image_blog_item_image_component__WEBPACK_IMPORTED_MODULE_10__["BlogItemImageComponent"], _components_blog_item_details_blog_item_details_component__WEBPACK_IMPORTED_MODULE_11__["BlogItemDetailsComponent"], _pipes_summary_pipe__WEBPACK_IMPORTED_MODULE_14__["SummaryPipe"], _shared_search_bar_search_bar_component__WEBPACK_IMPORTED_MODULE_15__["SearchBarComponent"], _components_blog_home_blog_home_component__WEBPACK_IMPORTED_MODULE_17__["BlogHomeComponent"], _pipes_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["FilterPipe"], _directives_text_format_directive__WEBPACK_IMPORTED_MODULE_19__["TextFormatDirective"], _components_selectize_selectize_component__WEBPACK_IMPORTED_MODULE_20__["SelectizeComponent"], _components_add_post_add_post_component__WEBPACK_IMPORTED_MODULE_21__["AddPostComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"]]
       });
     })();
@@ -395,12 +410,220 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], _components_blog_blog_component__WEBPACK_IMPORTED_MODULE_6__["BlogComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponent"], _components_blog_item_blog_item_component__WEBPACK_IMPORTED_MODULE_8__["BlogItemComponent"], _components_blog_item_text_blog_item_text_component__WEBPACK_IMPORTED_MODULE_9__["BlogItemTextComponent"], _components_blog_item_image_blog_item_image_component__WEBPACK_IMPORTED_MODULE_10__["BlogItemImageComponent"], _components_blog_item_details_blog_item_details_component__WEBPACK_IMPORTED_MODULE_11__["BlogItemDetailsComponent"], _pipes_summary_pipe__WEBPACK_IMPORTED_MODULE_14__["SummaryPipe"], _shared_search_bar_search_bar_component__WEBPACK_IMPORTED_MODULE_15__["SearchBarComponent"], _components_blog_home_blog_home_component__WEBPACK_IMPORTED_MODULE_17__["BlogHomeComponent"], _pipes_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["FilterPipe"], _directives_text_format_directive__WEBPACK_IMPORTED_MODULE_19__["TextFormatDirective"], _components_selectize_selectize_component__WEBPACK_IMPORTED_MODULE_20__["SelectizeComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], _components_blog_blog_component__WEBPACK_IMPORTED_MODULE_6__["BlogComponent"], _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponent"], _components_blog_item_blog_item_component__WEBPACK_IMPORTED_MODULE_8__["BlogItemComponent"], _components_blog_item_text_blog_item_text_component__WEBPACK_IMPORTED_MODULE_9__["BlogItemTextComponent"], _components_blog_item_image_blog_item_image_component__WEBPACK_IMPORTED_MODULE_10__["BlogItemImageComponent"], _components_blog_item_details_blog_item_details_component__WEBPACK_IMPORTED_MODULE_11__["BlogItemDetailsComponent"], _pipes_summary_pipe__WEBPACK_IMPORTED_MODULE_14__["SummaryPipe"], _shared_search_bar_search_bar_component__WEBPACK_IMPORTED_MODULE_15__["SearchBarComponent"], _components_blog_home_blog_home_component__WEBPACK_IMPORTED_MODULE_17__["BlogHomeComponent"], _pipes_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["FilterPipe"], _directives_text_format_directive__WEBPACK_IMPORTED_MODULE_19__["TextFormatDirective"], _components_selectize_selectize_component__WEBPACK_IMPORTED_MODULE_20__["SelectizeComponent"], _components_add_post_add_post_component__WEBPACK_IMPORTED_MODULE_21__["AddPostComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"]],
           providers: [_services_data_service__WEBPACK_IMPORTED_MODULE_13__["DataService"]],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         }]
       }], null, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/add-post/add-post.component.ts":
+  /*!***********************************************************!*\
+    !*** ./src/app/components/add-post/add-post.component.ts ***!
+    \***********************************************************/
+
+  /*! exports provided: AddPostComponent */
+
+  /***/
+  function srcAppComponentsAddPostAddPostComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddPostComponent", function () {
+      return AddPostComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _services_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../../services/data.service */
+    "./src/app/services/data.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+
+    var AddPostComponent = /*#__PURE__*/function () {
+      function AddPostComponent(postsService, router) {
+        _classCallCheck(this, AddPostComponent);
+
+        this.postsService = postsService;
+        this.router = router;
+        this.post = {
+          title: '',
+          url: '',
+          content: ''
+        };
+      }
+
+      _createClass(AddPostComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "save",
+        value: function save() {
+          var _this = this;
+
+          this.postsService.createOrUpdate(this.post).subscribe(function (f) {
+            _this.router.navigate(['/blog']);
+          });
+        }
+      }]);
+
+      return AddPostComponent;
+    }();
+
+    AddPostComponent.ɵfac = function AddPostComponent_Factory(t) {
+      return new (t || AddPostComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]));
+    };
+
+    AddPostComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AddPostComponent,
+      selectors: [["app-add-post"]],
+      decls: 19,
+      vars: 3,
+      consts: [[1, "col-lg-9", "col-md-9", "col-sm-9"], [3, "ngSubmit"], [1, "form-group"], [1, "col-form-label"], ["name", "title", "type", "text", "placeholder", "Wprowad\u017A tytu\u0142", 1, "form-control", 3, "ngModel", "ngModelChange"], ["name", "url", "type", "text", "placeholder", "URL", 1, "form-control", 3, "ngModel", "ngModelChange"], ["name", "content", "type", "text", "placeholder", "Tre\u015B\u0107", "rows", "10", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "form-group", "button"], ["type", "submit", 1, "btn", "btn-info"]],
+      template: function AddPostComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h4");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Dodaj post:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "form", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function AddPostComponent_Template_form_ngSubmit_3_listener() {
+            return ctx.save();
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "label", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Tytu\u0142:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "input", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddPostComponent_Template_input_ngModelChange_7_listener($event) {
+            return ctx.post.title = $event;
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "label", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Adres obrazu:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "input", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddPostComponent_Template_input_ngModelChange_11_listener($event) {
+            return ctx.post.url = $event;
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "label", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Tre\u015B\u0107:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "textarea", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddPostComponent_Template_textarea_ngModelChange_15_listener($event) {
+            return ctx.post.content = $event;
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "button", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Dodaj");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.post.title);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.post.url);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.post.content);
+        }
+      },
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWRkLXBvc3QvYWRkLXBvc3QuY29tcG9uZW50LnNjc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddPostComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-add-post',
+          templateUrl: './add-post.component.html',
+          styleUrls: ['./add-post.component.scss']
+        }]
+      }], function () {
+        return [{
+          type: _services_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]
+        }, {
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+        }];
+      }, null);
     })();
     /***/
 
@@ -564,16 +787,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(BlogItemDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this = this;
+          var _this2 = this;
 
           var id;
           this.route.paramMap.subscribe(function (params) {
             id = params.get('id');
           });
           this.dataService.getById(id).subscribe(function (res) {
-            _this.image = res['image'];
-            _this.text = res['text'];
-            _this.title = res['title'];
+            _this2.image = res['image'];
+            _this2.text = res['text'];
+            _this2.title = res['title'];
           });
         }
       }]);
@@ -930,7 +1153,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       inputs: {
         id: "id",
         image: "image",
-        text: "text"
+        text: "text",
+        title: "title"
       },
       decls: 3,
       vars: 3,
@@ -979,6 +1203,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }],
         text: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }],
+        title: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }]
       });
@@ -1057,7 +1284,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("id", item_r1.id)("image", item_r1.image)("text", item_r1.title);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("title", item_r1.title)("id", item_r1.id)("image", item_r1.image)("text", item_r1.text);
       }
     }
 
@@ -1076,10 +1303,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getAll",
         value: function getAll() {
-          var _this2 = this;
+          var _this3 = this;
 
           this.service.getAll().subscribe(function (response) {
-            _this2.items$ = response;
+            _this3.items$ = response;
           });
         }
       }]);
@@ -1099,12 +1326,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       decls: 3,
       vars: 4,
-      consts: [[4, "ngFor", "ngForOf"], [3, "id", "image", "text"]],
+      consts: [[4, "ngFor", "ngForOf"], [3, "title", "id", "image", "text"]],
       template: function BlogComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "selectize");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BlogComponent_div_1_Template, 2, 3, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BlogComponent_div_1_Template, 2, 4, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "filter");
         }
@@ -1395,16 +1622,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SelectizeComponent, [{
         key: "ngAfterViewInit",
         value: function ngAfterViewInit() {
-          var _this3 = this;
+          var _this4 = this;
 
           Object(rxjs_observable_fromEvent__WEBPACK_IMPORTED_MODULE_1__["fromEvent"])(this.input.nativeElement, 'keyup').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (event) {
             return event['target'].value;
           }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["debounceTime"])(400), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (value) {
-            return _this3.dataService.getByText({
+            return _this4.dataService.getByText({
               text: value
             });
           })).subscribe(function (results) {
-            _this3.posts$ = results;
+            _this4.posts$ = results;
           });
         }
       }]);
@@ -1608,6 +1835,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return ["/contact"];
     };
 
+    var _c3 = function _c3() {
+      return ["/add-post"];
+    };
+
     var NavbarComponent = /*#__PURE__*/function () {
       function NavbarComponent() {
         _classCallCheck(this, NavbarComponent);
@@ -1628,8 +1859,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: NavbarComponent,
       selectors: [["navbar"]],
-      decls: 10,
-      vars: 6,
+      decls: 13,
+      vars: 8,
       consts: [[1, "nav", "justify-content-center"], [1, "nav-item"], [1, "nav-link", "active", 3, "routerLink"]],
       template: function NavbarComponent_Template(rf, ctx) {
         if (rf & 1) {
@@ -1665,21 +1896,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "li", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "POST");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c0));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](6, _c2));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c3));
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
@@ -1901,6 +2146,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getByText(data) {
           return this.http.post(this.url + "/api/posts/", data);
         }
+      }, {
+        key: "createOrUpdate",
+        value: function createOrUpdate(post) {
+          return this.http.post("".concat(this.url, "/api/posts"), post);
+        }
       }]);
 
       return DataService;
@@ -1985,12 +2235,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SearchBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this4 = this;
+          var _this5 = this;
 
           this.route.queryParams.subscribe(function (params) {
-            _this4.filterText = params['name'];
+            _this5.filterText = params['name'];
 
-            _this4.sendFilter();
+            _this5.sendFilter();
           });
         }
       }, {
