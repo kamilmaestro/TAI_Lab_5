@@ -11,4 +11,13 @@
   <li class="nav-item">
     <a class="nav-link active" [routerLink]="['/add-post']">POST</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link active" [routerLink]="['/login']">LOGIN</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" [routerLink]="['/signup']">SIGNUP</a>
+  </li>
+  <li>
+    <button (click)="logOut()" class="dropdown-item">LOGOUT</button>
+  </li>
 </ul>
